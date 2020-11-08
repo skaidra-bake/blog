@@ -1,4 +1,5 @@
-$navbar-default-bg: black #logo {
+$navbar-default-bg: black;
+#logo {
     float: left;
     font-size: 1.7em;
     color: white;
@@ -33,7 +34,7 @@ $navbar-default-bg: black #logo {
     margin-top: 15px;
 }
 
-.desccription {
+.description {
     margin-top: 0;
 }
 
