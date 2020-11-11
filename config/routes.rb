@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root 'pages#index'
+
   resources :articles #, path: 'cars'
+  resources :users, except: [:new]
+
+  root 'pages#index'
   get 'about', to: 'pages#about'
+  get 'signup', to: 'users#new'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
